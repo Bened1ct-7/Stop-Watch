@@ -85,6 +85,7 @@ resetBtn.addEventListener('click', () => {
   min = 0;
   sec = 0;
   ten = 0;
+  time.classList.remove('fade');
   minText.textContent = min;
   secText.textContent = sec;
   tenText.textContent = ten;
