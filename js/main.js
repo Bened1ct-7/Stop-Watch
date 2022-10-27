@@ -43,7 +43,7 @@ const startTimer = () => {
         hourText.style.display = 'none';
       }
 
-      if (ten == 60) {
+      if (ten == 89) {
         sec++;
         secText.textContent = sec;
         ten = 0;
