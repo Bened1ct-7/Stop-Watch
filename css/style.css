@@ -1,0 +1,127 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+ 
+ :root {
+   --main-color: #4754E8;
+ }
+ 
+ * {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: "Poppins", sans-serif;
+ }
+ 
+ body {
+   background: #f9f9f9;
+ }
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p, .h1{
+  margin: 0;
+}
+
+header {
+  background: #fff;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header div i {
+  color: var(--main-color);
+}
+
+main > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+main .watch {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  border: 5px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watch .time {
+  color: #555;
+  font-weight: 500;
+  position: relative;
+}
+
+.time.fade {
+  animation: fade 0.8s cubic-bezier(0.86, 0, 0.07, 1) infinite alternate;
+  color: crimson;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+    transform: scale(0.5);
+  } to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.time span {
+  font-size: 2.5rem;
+}
+
+.time .ten {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+footer .reset {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: var(--main-color);
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.start-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  transition: all 0.3s ease;
+}
+
+.start-timer i {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.start-timer:hover {
+  background: #3843B4;
+}
